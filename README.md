@@ -8,6 +8,31 @@ We have just learned how to use POST and PUT requests so let's practice a bit mo
 
 <br>
 
+
+## Respuestas a las preguntas
+
+### 1. ¿Usaste el mismo tipo de ruta para actualizar la información de un paciente que para actualizar el departamento de un empleado?
+
+Al hacer el update de cualquier información del paciente he usado un **PUT** porque entendía que le iba a llegar toda la información con cualquier cosa cambiada y sin saber qué cosa iba a ser.  
+En el doctor he usado **PUT** para hacer update del departamento y **PATCH** para hacer change del status.  
+Realmente no sabía de qué otra forma podía hacer el ejercicio, ya que si usaba **PATCH** para los dos, se repetía la ruta y no me iba a funcionar.
+
+### 2. ¿Por qué elegiste la estrategia seleccionada?
+
+Me pareció que **PUT** era más adecuado cuando podía cambiarse cualquier parte del objeto y **PATCH** cuando solo quería cambiar un campo específico.
+
+### 3. ¿Cuáles son las ventajas y desventajas de las estrategias que elegiste para crear estas rutas?
+
+No sé contestar de forma específica, pero entiendo que:
+- **PUT** puede ser más seguro cuando se espera reemplazar un objeto completo.
+- **PATCH** es más eficiente para updates puntuales pero es más complicado si no sabes qué campos serán.
+
+### 4. ¿Cuál es el coste-beneficio entre usar PUT y PATCH?
+
+- **PUT** es más pesado porque envía toda la información.
+- **PATCH** es más ligero porque solo actualiza lo que cambia.
+
+
 ## Requirements
 
 1. Fork this repo.
